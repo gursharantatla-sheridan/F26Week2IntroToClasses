@@ -32,5 +32,32 @@ namespace F26Week2IntroToClasses
         {
 
         }
+
+        // getter / setter for id
+        public int GetId()
+        {
+            return id;
+        }
+
+        public void SetId(int id)
+        {
+            this.id = id;
+        }
+
+        // property for _name
+        public string Name
+        {
+            get { return _name; }
+            set { _name = value; }
+        }
+
+        public double Price
+        {
+            get => _price;
+            set => _price = value;
+        }
+
+        // auto-implemented property
+        public int Quantity { get; set; }
     }
 }
