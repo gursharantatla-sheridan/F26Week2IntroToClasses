@@ -43,6 +43,29 @@
                 Price = 500,
                 Quantity = 10
             };
+
+            Console.WriteLine("\n\n\n");
+
+
+
+
+            Account myAcc = new Account(500);
+            //myAcc.Balance = 20000;
+            Console.WriteLine("\nBalance = " + myAcc.Balance.ToString("C"));
+
+            myAcc.Deposit(300);
+            Console.WriteLine("\nBalance = " + myAcc.Balance.ToString("C"));
+
+            try
+            {
+                myAcc.Withdraw(4000);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+            Console.WriteLine("\nBalance = " + myAcc.Balance.ToString("C"));
         }
     }
 }
